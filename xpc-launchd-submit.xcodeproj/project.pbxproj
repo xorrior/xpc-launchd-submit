@@ -1,0 +1,339 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50C96B2726E97DF900DDFF15 /* MyInstallerPane.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C96B2626E97DF900DDFF15 /* MyInstallerPane.m */; };
+		50C96B2A26E97DF900DDFF15 /* MyInstallerPane.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50C96B2826E97DF900DDFF15 /* MyInstallerPane.xib */; };
+		50C96B2D26E97DF900DDFF15 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50C96B2B26E97DF900DDFF15 /* Localizable.strings */; };
+		50C96B2F26E97DF900DDFF15 /* InstallerSections.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50C96B2E26E97DF900DDFF15 /* InstallerSections.plist */; };
+		50C96B3326E97DF900DDFF15 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50C96B3126E97DF900DDFF15 /* InfoPlist.strings */; };
+		50C96B3B26E97E4200DDFF15 /* xpc_helper.c in Sources */ = {isa = PBXBuildFile; fileRef = 50C96B3A26E97E4200DDFF15 /* xpc_helper.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		50C96B2226E97DF900DDFF15 /* xpc-launchd-submit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "xpc-launchd-submit.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50C96B2526E97DF900DDFF15 /* MyInstallerPane.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyInstallerPane.h; sourceTree = "<group>"; };
+		50C96B2626E97DF900DDFF15 /* MyInstallerPane.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyInstallerPane.m; sourceTree = "<group>"; };
+		50C96B2926E97DF900DDFF15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MyInstallerPane.xib; sourceTree = "<group>"; };
+		50C96B2C26E97DF900DDFF15 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		50C96B2E26E97DF900DDFF15 /* InstallerSections.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = InstallerSections.plist; sourceTree = "<group>"; };
+		50C96B3026E97DF900DDFF15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50C96B3226E97DF900DDFF15 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		50C96B3926E97E1900DDFF15 /* xpc_helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xpc_helper.h; sourceTree = "<group>"; };
+		50C96B3A26E97E4200DDFF15 /* xpc_helper.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = xpc_helper.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50C96B1F26E97DF900DDFF15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50C96B1926E97DF900DDFF15 = {
+			isa = PBXGroup;
+			children = (
+				50C96B2426E97DF900DDFF15 /* xpc-launchd-submit */,
+				50C96B2326E97DF900DDFF15 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		50C96B2326E97DF900DDFF15 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50C96B2226E97DF900DDFF15 /* xpc-launchd-submit.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50C96B2426E97DF900DDFF15 /* xpc-launchd-submit */ = {
+			isa = PBXGroup;
+			children = (
+				50C96B2526E97DF900DDFF15 /* MyInstallerPane.h */,
+				50C96B2626E97DF900DDFF15 /* MyInstallerPane.m */,
+				50C96B2826E97DF900DDFF15 /* MyInstallerPane.xib */,
+				50C96B2B26E97DF900DDFF15 /* Localizable.strings */,
+				50C96B2E26E97DF900DDFF15 /* InstallerSections.plist */,
+				50C96B3026E97DF900DDFF15 /* Info.plist */,
+				50C96B3126E97DF900DDFF15 /* InfoPlist.strings */,
+				50C96B3926E97E1900DDFF15 /* xpc_helper.h */,
+				50C96B3A26E97E4200DDFF15 /* xpc_helper.c */,
+			);
+			path = "xpc-launchd-submit";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50C96B2126E97DF900DDFF15 /* xpc-launchd-submit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50C96B3626E97DF900DDFF15 /* Build configuration list for PBXNativeTarget "xpc-launchd-submit" */;
+			buildPhases = (
+				50C96B1E26E97DF900DDFF15 /* Sources */,
+				50C96B1F26E97DF900DDFF15 /* Frameworks */,
+				50C96B2026E97DF900DDFF15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "xpc-launchd-submit";
+			productName = "xpc-launchd-submit";
+			productReference = 50C96B2226E97DF900DDFF15 /* xpc-launchd-submit.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50C96B1A26E97DF900DDFF15 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = Test;
+				TargetAttributes = {
+					50C96B2126E97DF900DDFF15 = {
+						CreatedOnToolsVersion = 11.7;
+					};
+				};
+			};
+			buildConfigurationList = 50C96B1D26E97DF900DDFF15 /* Build configuration list for PBXProject "xpc-launchd-submit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 50C96B1926E97DF900DDFF15;
+			productRefGroup = 50C96B2326E97DF900DDFF15 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50C96B2126E97DF900DDFF15 /* xpc-launchd-submit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50C96B2026E97DF900DDFF15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50C96B2A26E97DF900DDFF15 /* MyInstallerPane.xib in Resources */,
+				50C96B3326E97DF900DDFF15 /* InfoPlist.strings in Resources */,
+				50C96B2D26E97DF900DDFF15 /* Localizable.strings in Resources */,
+				50C96B2F26E97DF900DDFF15 /* InstallerSections.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50C96B1E26E97DF900DDFF15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50C96B2726E97DF900DDFF15 /* MyInstallerPane.m in Sources */,
+				50C96B3B26E97E4200DDFF15 /* xpc_helper.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		50C96B2826E97DF900DDFF15 /* MyInstallerPane.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50C96B2926E97DF900DDFF15 /* Base */,
+			);
+			name = MyInstallerPane.xib;
+			sourceTree = "<group>";
+		};
+		50C96B2B26E97DF900DDFF15 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50C96B2C26E97DF900DDFF15 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		50C96B3126E97DF900DDFF15 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50C96B3226E97DF900DDFF15 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		50C96B3426E97DF900DDFF15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.16;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		50C96B3526E97DF900DDFF15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.16;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		50C96B3726E97DF900DDFF15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "xpc-launchd-submit/Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.plugnplay.xpc-launchd-submit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		50C96B3826E97DF900DDFF15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "xpc-launchd-submit/Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.plugnplay.xpc-launchd-submit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50C96B1D26E97DF900DDFF15 /* Build configuration list for PBXProject "xpc-launchd-submit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50C96B3426E97DF900DDFF15 /* Debug */,
+				50C96B3526E97DF900DDFF15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50C96B3626E97DF900DDFF15 /* Build configuration list for PBXNativeTarget "xpc-launchd-submit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50C96B3726E97DF900DDFF15 /* Debug */,
+				50C96B3826E97DF900DDFF15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 50C96B1A26E97DF900DDFF15 /* Project object */;
+}
