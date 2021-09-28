@@ -11,7 +11,7 @@
 
 __attribute__((constructor)) static void exec()
 {
-    xpc_object_t resp = XpcLaunchdSubmitJob("/path", "com.xpc.launchd-submit", 1);
+    xpc_object_t resp = XpcLaunchdSubmitJob("PAYLOAD", "LABEL", 1);
     
     char *strResp = xpc_copy_description(resp);
     NSString *objcResp = [NSString stringWithCString:strResp encoding:NSUTF8StringEncoding];

@@ -15,37 +15,28 @@ xpc_object_t XpcLaunchdSubmitJob(char *program, char *label, int keepalive) {
     
     // Set KeepAlive to TRUE
     xpc_dictionary_set_bool(job, "KeepAlive", 1);
-    
     // Set the label
     xpc_dictionary_set_string(job, "Label", label);
-    
     // Create the empty ProgramArguments array
     xpc_object_t pArgs = xpc_array_create(NULL, 0);
     xpc_dictionary_set_value(job, "ProgramArguments", pArgs);
-    
     // Set the program value
     xpc_dictionary_set_string(job, "Program", program);
-    
     // Create the XPC request object
-    
     xpc_dictionary_set_value(request, "SubmitJob", job);
     xpc_dictionary_set_value(dict, "request", request);
     xpc_dictionary_set_uint64(dict, "subsystem", 7);
     xpc_dictionary_set_uint64(dict, "type", 7);
     xpc_dictionary_set_uint64(dict, "handle", 0);
     xpc_dictionary_set_uint64(dict, "routine", ROUTINE_SUBMIT);
-    
     xpc_object_t *outDict = NULL;
-    
     struct xpc_global_data *xpc_gd = (struct xpc_global_data *) _os_alloc_once_table[1].ptr;
-    
     // Submit the job to launchd
     int rc = xpc_pipe_routine(xpc_gd->xpc_bootstrap_pipe, dict, &outDict);
+    
     if (rc == 0) {
-        // Error handling
         return outDict;
     }
-    
     if (outDict != NULL) {
         int err = xpc_dictionary_get_int64(outDict, "error");
         return outDict;
