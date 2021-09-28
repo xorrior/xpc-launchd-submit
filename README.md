@@ -1,4 +1,4 @@
-# xpc-launchd-submit
+# xpc-launchd-submit Installer Plugin (OBTSv4)
 
 Send a SubmitJob routine/command to launchd over XPC
 
